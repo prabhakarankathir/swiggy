@@ -25,7 +25,7 @@ In order to utilise this project you need to have the following installed locall
 
 ## Usage
 
-To Run the project first navigate into the main project folder and run the below command to Install all the packages listed in package.json automatically.
+To Run the project first navigate into the "swiggyproject" folder and run the below command to Install all the packages listed in package.json automatically.
 
 `npm install`
 
