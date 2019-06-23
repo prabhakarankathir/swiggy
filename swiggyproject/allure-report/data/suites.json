@@ -1,0 +1,57 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Cart Management Suite",
+    "children" : [ {
+      "name" : "Test1: Verify Cart is empty upon accessing swiggy for the first time",
+      "uid" : "d5c9d6694b2e0f3c",
+      "parentUid" : "ba99de7449aca68a6fa6e9fb8a418ee3",
+      "status" : "failed",
+      "time" : {
+        "start" : 1561321327686,
+        "stop" : 1561321355369,
+        "duration" : 27683
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Test2: Verify Cart is updated when an Item is added",
+      "uid" : "74b462bbdb0b508b",
+      "parentUid" : "ba99de7449aca68a6fa6e9fb8a418ee3",
+      "status" : "broken",
+      "time" : {
+        "start" : 1561321355369,
+        "stop" : 1561321360515,
+        "duration" : 5146
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Test3: Verify Cart is updated when an Item is deleted",
+      "uid" : "17f0766375397a80",
+      "parentUid" : "ba99de7449aca68a6fa6e9fb8a418ee3",
+      "status" : "broken",
+      "time" : {
+        "start" : 1561321360516,
+        "stop" : 1561321368892,
+        "duration" : 8376
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Test3: Verify able to add an Item to cart n number of times",
+      "uid" : "bf914d9d4d5de0a6",
+      "parentUid" : "ba99de7449aca68a6fa6e9fb8a418ee3",
+      "status" : "broken",
+      "time" : {
+        "start" : 1561321368893,
+        "stop" : 1561321373300,
+        "duration" : 4407
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "ba99de7449aca68a6fa6e9fb8a418ee3"
+  } ]
+}

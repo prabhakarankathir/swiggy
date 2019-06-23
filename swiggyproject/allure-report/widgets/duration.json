@@ -1,0 +1,41 @@
+[ {
+  "uid" : "17f0766375397a80",
+  "name" : "Test3: Verify Cart is updated when an Item is deleted",
+  "time" : {
+    "start" : 1561321360516,
+    "stop" : 1561321368892,
+    "duration" : 8376
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "74b462bbdb0b508b",
+  "name" : "Test2: Verify Cart is updated when an Item is added",
+  "time" : {
+    "start" : 1561321355369,
+    "stop" : 1561321360515,
+    "duration" : 5146
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d5c9d6694b2e0f3c",
+  "name" : "Test1: Verify Cart is empty upon accessing swiggy for the first time",
+  "time" : {
+    "start" : 1561321327686,
+    "stop" : 1561321355369,
+    "duration" : 27683
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf914d9d4d5de0a6",
+  "name" : "Test3: Verify able to add an Item to cart n number of times",
+  "time" : {
+    "start" : 1561321368893,
+    "stop" : 1561321373300,
+    "duration" : 4407
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

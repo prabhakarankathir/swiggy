@@ -1,7 +1,7 @@
 {
   "name": "swiggyproject",
   "version": "1.0.0",
-  "description": "swiggy automation project",
+  "description": "Swiggy Test Automation project",
   "main": "index.js",
   "scripts": {
     "test": "wdio"
@@ -16,7 +16,6 @@
     "@wdio/local-runner": "^5.10.7",
     "@wdio/mocha-framework": "^5.10.1",
     "@wdio/selenium-standalone-service": "^5.9.3",
-    "@wdio/spec-reporter": "^5.9.3",
     "@wdio/sync": "^5.10.1",
     "allure-commandline": "^2.9.0",
     "chai": "^4.2.0",

@@ -9,11 +9,11 @@ exports.config = {
     //
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
-    runner: 'local',
-    reporters: [['allure', {
+     reporters: [['allure', {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+        
     }]],
     //
     // Uncomment line below to override default path ('/wd/hub') for usage of driver binary directly, ex: chromedriver or geckodriver.
@@ -50,7 +50,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 1,
+    maxInstances: 5,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -60,7 +60,7 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 1,
+        maxInstances: 5,
         //
         browserName: 'chrome',
         // If outputDir is provided WebdriverIO can capture driver session logs
@@ -94,6 +94,7 @@ exports.config = {
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
     bail: 0,
+    //screenshotPath: './errorShots/',
     //
     // Set a base URL in order to shorten url command calls. If your `url` parameter starts
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
@@ -131,7 +132,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-     reporters: ['dot'],
+     reporters: ['dot','allure'],
+     /**reporterOptions: {
+        outputDir: './reports',
+        mochawesome_filename: 'sample',
+      includeScreenshots:true,
+      screenshotUseRelativePath:true
+  }, **/
     
     //
     // Options to be passed to Mocha.
@@ -162,10 +169,10 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-     //beforeSession: function (config, capabilities, specs) {
+     beforeSession: function (config, capabilities, specs) {
     
-//const del = require('del');
-//del(['allure-report','errorshots','reports']);     },
+    const del = require('del');
+    del(['allure-report','allure-results']);     },
     /**
      * Gets executed before test execution begins. At this point you can access to all global
      * variables like `browser`. It is the perfect place to define custom commands.
@@ -174,7 +181,8 @@ exports.config = {
      */
     before: function (capabilities, specs) {
     expect = require('chai').expect;
-    should = require('chai').should();    
+    should = require('chai').should();
+    assert = require('chai').assert;    
      },
     /**
      * Runs before a WebdriverIO command gets executed.

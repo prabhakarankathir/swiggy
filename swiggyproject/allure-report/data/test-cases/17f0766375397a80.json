@@ -1,0 +1,306 @@
+{
+  "uid" : "17f0766375397a80",
+  "name" : "Test3: Verify Cart is updated when an Item is deleted",
+  "fullName" : "Cart Management Suite.Test3: Verify Cart is updated when an Item is deleted",
+  "historyId" : "5b9c6070da618cd6935897a0a48fe7ac",
+  "time" : {
+    "start" : 1561321360516,
+    "stop" : 1561321368892,
+    "duration" : 8376
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\"input[class='_381fS _1oTLG _3BIgv']\") still not displayed after 3000ms",
+  "statusTrace" : "Error: element (\"input[class='_381fS _1oTLG _3BIgv']\") still not displayed after 3000ms\n                    at timer.catch.e (G:\\project\\swiggyproject\\node_modules\\webdriverio\\build\\commands\\browser\\waitUntil.js:70:15)\n                    at Element.runCommand (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:31:24)\n                    at Element.<anonymous> (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:53:31)\n                    at Element.fn (G:\\project\\swiggyproject\\node_modules\\webdriverio\\build\\middlewares.js:27:57)\n                    at Element.<anonymous> (G:\\project\\swiggyproject\\node_modules\\webdriverio\\build\\middlewares.js:50:8)\n                    at Element.waitForDisplayed (G:\\project\\swiggyproject\\node_modules\\webdriverio\\build\\commands\\element\\waitForDisplayed.js:52:15)\n                    at Element.runCommand (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:37:32)\n                    at Home_Page.setSearchLocation (G:\\project\\swiggyproject\\pageObjects\\home_page.js:30:14)\n                    at Context.<anonymous> (G:\\project\\swiggyproject\\tests\\cartManagement.js:59:21)\n                    at Promise (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\index.js:57:22)\n                    at Context.executeSync (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\index.js:55:10)\n                    at G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\index.js:201:70",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\"input[class='_381fS _1oTLG _3BIgv']\") still not displayed after 3000ms",
+    "statusTrace" : "Error: element (\"input[class='_381fS _1oTLG _3BIgv']\") still not displayed after 3000ms\n                    at timer.catch.e (G:\\project\\swiggyproject\\node_modules\\webdriverio\\build\\commands\\browser\\waitUntil.js:70:15)\n                    at Element.runCommand (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:31:24)\n                    at Element.<anonymous> (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:53:31)\n                    at Element.fn (G:\\project\\swiggyproject\\node_modules\\webdriverio\\build\\middlewares.js:27:57)\n                    at Element.<anonymous> (G:\\project\\swiggyproject\\node_modules\\webdriverio\\build\\middlewares.js:50:8)\n                    at Element.waitForDisplayed (G:\\project\\swiggyproject\\node_modules\\webdriverio\\build\\commands\\element\\waitForDisplayed.js:52:15)\n                    at Element.runCommand (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:37:32)\n                    at Home_Page.setSearchLocation (G:\\project\\swiggyproject\\pageObjects\\home_page.js:30:14)\n                    at Context.<anonymous> (G:\\project\\swiggyproject\\tests\\cartManagement.js:59:21)\n                    at Promise (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\index.js:57:22)\n                    at Context.executeSync (G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\index.js:55:10)\n                    at G:\\project\\swiggyproject\\node_modules\\@wdio\\sync\\build\\index.js:201:70",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/window/current/maximize",
+      "time" : {
+        "start" : 1561321360516,
+        "stop" : 1561321360523,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c111233989ba374b",
+        "name" : "Response",
+        "source" : "c111233989ba374b.json",
+        "type" : "application/json",
+        "size" : 58
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1561321360523,
+        "stop" : 1561321365862,
+        "duration" : 5339
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "974002e0c2fd5faa",
+        "name" : "Request",
+        "source" : "974002e0c2fd5faa.json",
+        "type" : "application/json",
+        "size" : 38
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1561321365863,
+        "stop" : 1561321365886,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "11387184b102899f",
+        "name" : "Request",
+        "source" : "11387184b102899f.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "db9b8bb787dc4a38",
+        "name" : "Response",
+        "source" : "db9b8bb787dc4a38.json",
+        "type" : "application/json",
+        "size" : 308
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1561321365889,
+        "stop" : 1561321365905,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dc32671713f3a512",
+        "name" : "Request",
+        "source" : "dc32671713f3a512.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "c9c8cbc27223c169",
+        "name" : "Response",
+        "source" : "c9c8cbc27223c169.json",
+        "type" : "application/json",
+        "size" : 308
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1561321366390,
+        "stop" : 1561321366418,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d8654b640acdce3f",
+        "name" : "Request",
+        "source" : "d8654b640acdce3f.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "813e05be8bbd717b",
+        "name" : "Response",
+        "source" : "813e05be8bbd717b.json",
+        "type" : "application/json",
+        "size" : 308
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1561321366890,
+        "stop" : 1561321367296,
+        "duration" : 406
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "65b7287016cd00ac",
+        "name" : "Request",
+        "source" : "65b7287016cd00ac.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "534cff7b55417aa5",
+        "name" : "Response",
+        "source" : "534cff7b55417aa5.json",
+        "type" : "application/json",
+        "size" : 308
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1561321367389,
+        "stop" : 1561321367412,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4afc2c9814068509",
+        "name" : "Request",
+        "source" : "4afc2c9814068509.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "b1bbbbad490c2485",
+        "name" : "Response",
+        "source" : "b1bbbbad490c2485.json",
+        "type" : "application/json",
+        "size" : 308
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1561321367890,
+        "stop" : 1561321367906,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9eedfddaaaa891bd",
+        "name" : "Request",
+        "source" : "9eedfddaaaa891bd.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "6bf58ce8090dfa3e",
+        "name" : "Response",
+        "source" : "6bf58ce8090dfa3e.json",
+        "type" : "application/json",
+        "size" : 308
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1561321368389,
+        "stop" : 1561321368405,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d72667a22ce392fc",
+        "name" : "Request",
+        "source" : "d72667a22ce392fc.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "f673cafdd6e0f93d",
+        "name" : "Response",
+        "source" : "f673cafdd6e0f93d.json",
+        "type" : "application/json",
+        "size" : 308
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "attachmentsCount" : 16,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Cart Management Suite"
+  }, {
+    "name" : "testClass",
+    "value" : "Cart Management Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test3: Verify Cart is updated when an Item is deleted"
+  }, {
+    "name" : "package",
+    "value" : "Cart Management Suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "17f0766375397a80.json",
+  "parameterValues" : [ "chrome" ]
+}
