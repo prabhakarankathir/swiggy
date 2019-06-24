@@ -29,7 +29,7 @@ class HomePage {
 	setSearchLocation(search) {
 	this.search.waitForDisplayed(3000);
 	this.search.setValue(search);
-	browser.pause(4000);
+	this.searchResult.waitForDisplayed(4000);
 	return this.searchResult.click();
 	}
 	

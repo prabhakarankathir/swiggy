@@ -14,12 +14,12 @@ class CartPage {
 	}
 
 	clickRemoveButton() {
-		browser.pause(6000);	
+		this.removeButton.waitForDisplayed(6000);
 		return this.removeButton.click();
 	}
 
 	clickAddButton() {
-		browser.pause(3000);	
+		this.addButton.waitForDisplayed(6000);
 		return this.addButton.click();
 	}
 	

@@ -17,12 +17,12 @@ class RestaurantSearchpage {
 	}
 	
 	clickCartButton() {		
-		browser.pause(6000);	
+		this.cartButton.waitForDisplayed(6000);
 		return this.cartButton.click();
 	}
 	
 	clickRestaurant() {	
-		browser.pause(6000);
+		this.restaurant.waitForDisplayed(6000);
 		return this.restaurant.click();
 	}
 	
@@ -31,7 +31,7 @@ class RestaurantSearchpage {
 	}
 
 	clickHelpButton() {
-		browser.pause(6000);	
+		this.helpButton.waitForDisplayed(6000);
 		return this.helpButton.click();
 	}
 	

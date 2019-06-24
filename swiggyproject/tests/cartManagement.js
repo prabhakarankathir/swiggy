@@ -73,9 +73,8 @@ function navigateToRestaurant(location) {
         var itemName = restaurantItemsPage.getItemNameText();
         restaurantItemsPage.clickAddItemButton();
         restaurantSearchPage.clickCartButton();
-        browser.pause(3000);
+        cartPage.itemName.waitForDisplayed(3000)
         expect(itemName).to.equal(cartPage.getitemNameText());
-        browser.pause(3000);
           for (i = 1; i < n; i++) { 
           cartPage.clickAddButton();
           browser.setTimeout({ 'implicit': 6000 });

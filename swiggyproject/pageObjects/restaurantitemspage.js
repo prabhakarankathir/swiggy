@@ -4,11 +4,10 @@ class RestaurantItemspage {
 
 	clickAddItemButton() {
 	return this.addItemButton.click();
-	browser.pause(6000);
 	}
 
 	getItemNameText() {
-	browser.pause(6000);
+	this.ItemName.waitForDisplayed(6000);
 	return this.ItemName.getText();
 	}
 }

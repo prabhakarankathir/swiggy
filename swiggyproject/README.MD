@@ -2,7 +2,7 @@
 
 Swiggy-Test Automation project uses mocha framework and webdriver io and covers basic navigation, feature testing and performance testing. We have Allure and dot reports which represents the details of the test run. We have breaken down the features of swiggy as below.
 
-## Features that can be Automated
+## Features Identified for Automation
 - Authentication.
 - Delivery Address Management.
 - Cart Management.
@@ -15,6 +15,7 @@ Swiggy-Test Automation project uses mocha framework and webdriver io and covers 
 - Help & Support Feature.
 - Payment Methods.
 - Liver Order Tracking.
+- Faced difficulties since restaurant/dishes availability varied based on timings.
 
 ## Requirements
 
