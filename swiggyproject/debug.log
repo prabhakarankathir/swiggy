@@ -1156,3 +1156,7 @@
 [0623/185902.115:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffcc212f3a0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0623/185902.127:ERROR:file_io_win.cc(161)] CreateFile C:\Users\PRABHA~1.KAT\AppData\Local\Temp\scoped_dir11244_9403\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
 [0623/185902.125:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0624/054751.085:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0624/054751.088:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[0624/054751.088:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0624/054751.088:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)

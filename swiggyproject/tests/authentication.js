@@ -1,4 +1,4 @@
-var Home_page = require("../pageObjects/home_page.js");
+var homePage = require("../pageObjects/homepage.js");
 
 beforeEach(async()  => {
 	browser.maximizeWindow();
@@ -8,10 +8,10 @@ beforeEach(async()  => {
 describe('Authentication Suite', function () {
 
 	it('Verify Sign Up page is displayed on clicking SignUp button', function(){
-	Home_page.clickSignUpButton();
-	Home_page.signUpHeader.waitForDisplayed(3000);
+	homePage.clickSignUpButton();
+	homePage.signUpHeader.waitForDisplayed(3000);
 		try {
-				expect(Home_page.signUpHeaderText).to.equal("Sign up");
+				expect(homePage.signUpHeaderText).to.equal("Sign up");
 				console.log("Sign Up Page is displayed successfully");
 			} catch(err) {
 				console.log("Exception: " + err);
@@ -20,10 +20,10 @@ describe('Authentication Suite', function () {
 	});
 
 	it('Verify Login page is displayed on clicking Login button', function(){
-	Home_page.clickLogInButton();
-	Home_page.logInHeader.waitForDisplayed(3000);
+	homePage.clickLogInButton();
+	homePage.logInHeader.waitForDisplayed(3000);
 		try {
-				expect(Home_page.logInHeaderText).to.equal("Login");
+				expect(homePage.logInHeaderText).to.equal("Login");
 				console.log("Log In Page is displayed successfully");
 			} catch(err) {
 				console.log("Exception: " + err);

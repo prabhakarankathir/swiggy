@@ -9,12 +9,6 @@ exports.config = {
     //
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
-     reporters: [['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: false,
-        
-    }]],
     //
     // Uncomment line below to override default path ('/wd/hub') for usage of driver binary directly, ex: chromedriver or geckodriver.
     // path: '/',
@@ -32,7 +26,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        './pageObjects/*_Page.js'
+        './pageObjects/*.js'
     ],
     //
     // ============
@@ -50,7 +44,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 5,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -60,7 +54,7 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 1,
         //
         browserName: 'chrome',
         // If outputDir is provided WebdriverIO can capture driver session logs
@@ -133,19 +127,18 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
      reporters: ['dot','allure'],
-     /**reporterOptions: {
-        outputDir: './reports',
-        mochawesome_filename: 'sample',
-      includeScreenshots:true,
-      screenshotUseRelativePath:true
-  }, **/
-    
+     reporterOptions: {
+        allure: {
+            outputDir: './reports'
+        }
+     },
+      
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 80000
     },
     //
     // =====
@@ -169,10 +162,10 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-     beforeSession: function (config, capabilities, specs) {
+    //beforeSession: function (config, capabilities, specs) {
     
-    const del = require('del');
-    del(['allure-report','allure-results']);     },
+    //     },
+  
     /**
      * Gets executed before test execution begins. At this point you can access to all global
      * variables like `browser`. It is the perfect place to define custom commands.

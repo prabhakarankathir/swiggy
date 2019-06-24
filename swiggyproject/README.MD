@@ -40,8 +40,10 @@ To Run specific test navigate to "swiggyproject" folder and replace the "name" w
 ## Reports
 
 Reports for all test run will be available in allure-report folder.
-Use the below command to generate and view allure reports.
+Use the below command from the "swiggyproject" folder to generate and view allure reports.
 
-`./node_modules/.bin/allure generate "path to project"/swiggyproject/allure-results && allure open`
+`./node_modules/.bin/allure generate "path to project"/swiggyproject/allure-results --clean`
+
+`./node_modules/.bin/allure open`
 
 Replace "path to project" with the project file path.
